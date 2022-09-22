@@ -14,7 +14,8 @@ import Cast from "../Components/Cast/Cast.compo";
 
 const Movie_page = () => {
   const { id } = useParams();
-  const { movie, setmovie } = useContext(MoviesContext);
+  const { movies, setmovies } = useContext(MoviesContext);
+  // const [over, setover] = useState([]);
   const [cast, setCast] = useState([]);
   const [similarMovies, setSimilarMovies] = useState([]);
   const [recommendedMovies, setRecommendedMovies] = useState([]);
@@ -51,8 +52,9 @@ const Movie_page = () => {
   useEffect(() => {
     const requestMovie = async () => {
       const getMovieData = await axios.get(`/movie/${id}`);
-      setmovie(getMovieData.data);
-      console.log(movie);
+      const sajal = getMovieData.data;
+      // setover(sajal);
+      setmovies(sajal);
     };
 
     requestMovie();
@@ -122,6 +124,7 @@ const Movie_page = () => {
       },
     ],
   };
+  // console.log(movie);
 
   return (
     <>
@@ -129,7 +132,7 @@ const Movie_page = () => {
       <div className="my-12 container px-4 lg-ml-20 lg:w-2/3">
         <div className="flex flex-col items-start gap-3">
           <h1 className="text-gray-800 font-bold text-2xl">About the movie</h1>
-          {/* <p>{movie.overview}</p> */}
+          <p>{movies.overview}</p>
         </div>
 
         <div className="my-8">
@@ -199,7 +202,7 @@ const Movie_page = () => {
           <PosterSlider
             config={settings}
             title="Recommended Movies"
-            posters={recommendedMovies}
+            posters={similarMovies}
             isDark={false}
           />
         </div>

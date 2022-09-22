@@ -7,10 +7,10 @@ export const MoviesContext = createContext();
 const MovieProvider = ({ children }) => {
   const [movies, setmovies] = useState({
     id: 0,
-    original_title: "",
-    overview: "",
-    backdrop_path: "",
-    poster_path: "",
+    original_title: " ",
+    overview: " ",
+    backdrop_path: " ",
+    poster_path: " ",
   });
 
   const [isOpen, setIsOpen] = useState(false);

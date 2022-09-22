@@ -23,6 +23,7 @@ const Home_page = () => {
     const reqTopRatedMovies = async () => {
       const getTopRatedMovies = await axios.get("/movie/top_rated");
       setrecommend(getTopRatedMovies.data.results);
+      // console.log(getTopRatedMovies);
     };
 
     reqTopRatedMovies();

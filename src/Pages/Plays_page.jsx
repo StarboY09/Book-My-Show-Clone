@@ -10,9 +10,9 @@ const Plays_page = () => {
       <div className="container mx-auto px-4 my-10">
         <div className="w-full  flex flex-col-reverse lg:flex-row-reverse gap-4">
           <div className="lg:w-3/4 p-4 bg-white rounded">
-            <h2 className="text-2xl font-bold mb-4">Plays in NCR Delhi</h2>
+            <h2 className="text-2xl font-bold mb-4">Plays in Indore,MP</h2>
             <div className="flex flex-wrap">
-              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
+              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-stretch hover:items-center">
                 <Poster
                   isPlay={true}
                   src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
@@ -20,44 +20,44 @@ const Plays_page = () => {
                   subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
                 />
               </div>
-              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
+              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-stretch hover:items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-suhani-shah-kahaani-india-tour-0-2022-8-29-t-12-36-14.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
-                  subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
+                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-standup-comedy-shows-ft-gaurav-gupta-0-2022-9-16-t-14-57-17.jpg"
+                  title="Standup Comedy Shows ft. Gaurav Gupta"
+                  subtitle="Comedy Shows | Hindi | 18yrs + | 1hr 10mins"
                 />
               </div>
-              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
+              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-stretch hover:items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-daddy-kool-by-atul-khatri-0-2022-8-16-t-10-37-17.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
-                  subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
+                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-digital-marketing-communication-0-2021-5-12-t-19-20-20.jpg"
+                  title="Digital Marketing & Communication"
+                  subtitle="Education"
                 />
               </div>
-              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
+              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-stretch hover:items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-sunburn-arena-ft-dj-snake-delhi-ncr-0-2022-8-19-t-11-31-17.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
-                  subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
+                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-data-science-0-2021-5-12-t-19-16-45.jpg"
+                  title="Data Science"
+                  subtitle="Education"
                 />
               </div>
-              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
+              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-stretch hover:items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
-                  subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
+                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-standup-comedy-open-mic-by-bom-0-2022-5-30-t-11-56-39.jpg"
+                  title="Standup Comedy Open Mic by BOM"
+                  subtitle="Comedy Shows | English, Hindi | 16yrs + | 1hr 15mins"
                 />
               </div>
-              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
+              <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-stretch hover:items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
-                  subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
+                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-pannu-yaar-ft-gurleen-pannu-0-2022-7-23-t-10-38-28.jpg"
+                  title="Pannu Yaar! ft.Gurleen Pannu"
+                  subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 15mins"
                 />
               </div>
             </div>

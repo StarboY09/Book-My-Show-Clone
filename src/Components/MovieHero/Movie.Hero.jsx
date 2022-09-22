@@ -2,27 +2,29 @@ import React, { useContext } from "react";
 import { MoviesContext } from "../../context/Movies.context";
 import MovieInfo from "./MovieInfo";
 const MovieHero = () => {
-  const { movie, rentMovie, buyMovie } = useContext(MoviesContext);
-  // const genres = movie.genres?.map(({ name }) => name).join(", ");
+  const { movies, rentMovie, buyMovie } = useContext(MoviesContext);
+  const genres = movies.genres?.map(({ name }) => name).join(", ");
   return (
     <>
       {/* console.log(genres); */}
       <div>
         {/* mobile and tab sizes */}
         <div className="lg:hidden w-full">
-          {/* <img
-            src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+          <img
+            src={`https://image.tmdb.org/t/p/original${movies.poster_path}`}
             alt="cover poster"
             className="m-4 rounded"
             style={{ width: "calc(100% - 2rem)" }}
-          /> */}
+          />
         </div>
         <div className="flex flex-col gap-3 lg:hidden">
           <div className="flex flex-col-reverse gap-3 px-4 my-3">
             <div className="text-black flex flex-col gap-2 md:px-4">
               <h4>4k rating</h4>
               <h4>English, Hindi, Kannada, Tamil, Telgu</h4>
-              <h4>{/* {movie.runtime} min |{genres} */}</h4>
+              <h4>
+                {movies.runtime} min |{genres}
+              </h4>
             </div>
           </div>
           <div className="flex items-center gap-3 md:px-4 md:w-screen text-xl px-4">
@@ -56,21 +58,21 @@ const MovieHero = () => {
 
           <div className="absolute z-30 left-24 top-10 flex items-center gap-10">
             <div className="w-64 h-96">
-              {/* <img
-                src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+              <img
+                src={`https://image.tmdb.org/t/p/original${movies.poster_path}`}
                 alt="Movie Poster"
                 className="w-full h-full rounded-lg"
-              /> */}
+              />
             </div>
             <div>
-              <MovieInfo movie={movie} />
+              <MovieInfo movie={movies} />
             </div>
           </div>
-          {/* <img
-            src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
+          <img
+            src={`https://image.tmdb.org/t/p/original${movies.backdrop_path}`}
             alt="backgrop poster"
             className="w-full h-full object-cover object-center"
-          /> */}
+          />
         </div>
       </div>
     </>

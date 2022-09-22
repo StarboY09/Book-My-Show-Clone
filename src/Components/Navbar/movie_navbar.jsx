@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import MyPopover from "../SginComponets/sgin";
 
 import {
   BiChevronDown,
@@ -54,11 +55,11 @@ const Largenav = () => {
           </div>
         </div>
         <div className="flex items-center gap-3  ">
-          <span className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white">
+          <span className="text-gray-400 text-base flex  items-center cursor-pointer hover:text-black">
             Indore,M.P <BiChevronDown />
           </span>
           <button className="bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Sign In
+            <MyPopover title="Sgin In" nd="Settings" rd="Thank You" />
           </button>
           <div className="w-8 h-8 text-white ">
             <BiMenu className="w-full h-full" />

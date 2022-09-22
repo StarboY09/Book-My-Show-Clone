@@ -1,6 +1,7 @@
 import React from "react";
 import { BiChevronDown, BiMenu, BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import MyPopover from "../SginComponets/sgin";
 
 function Navsm() {
   return (
@@ -59,18 +60,18 @@ function Navlg() {
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white">
+          <span className="text-gray-400 text-base flex items-center font-blod cursor-pointer hover:text-white">
             Indore,MP <BiChevronDown />
           </span>
           <Link
             to="/plays"
-            className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white"
+            className="text-gray-400 text-base flex items-center cursor-pointer hover:text-white"
           >
             Plays
           </Link>
-          <button className="bg-red-600 text-white px-2 py-1 text-sm rounded">
-            Sign In
-          </button>
+          <div className="bg-red-600 text-white px-2 py-1 text-sm rounded">
+            <MyPopover />
+          </div>
           <div className="w-8 h-8 text-white">
             <BiMenu className="w-full h-full" />
           </div>
