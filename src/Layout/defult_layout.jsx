@@ -6,9 +6,18 @@ const defult_layout =(Component) => ({...props}) => {
     <div>
         <Navbar/>
         <Component {...props}/>
-        <div>Footer</div>
-    </div>
-  )
-}
+        <div className="bg-premier-800 flex aline-center  ">
+          <footer>
+            <span>
+              <MdOutlineCreate size={50} textAnchor={"hello"} /> Created By
+              Sajal
+              <HiOutlineMail size={50} />
+              sajalgupta5050@gmail.com
+            </span>
+          </footer>
+        </div>
+      </div>
+    );
+  };
 
-export default defult_layout
+export default defult_layout;
